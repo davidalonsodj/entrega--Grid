@@ -40,7 +40,7 @@
     background-image: url('https://images03.nicepage.com/c461c07a441a5d220e8feb1a/d8ce469044b958508f4bdbab/blueschoolbackpackwithessentialsupplies_232148207678.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    background-position: center;
     height: 100%;
   }
   
@@ -50,7 +50,7 @@
     background-image: url('https://images03.nicepage.com/c461c07a441a5d220e8feb1a/9e4ce16148dd5cbeb1065410/89f80abe-6acd-d8dc-a341-3e571206975b.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    background-position: center;
     height: 100%;
   }
   
@@ -72,7 +72,7 @@
     background-image: url('https://images03.nicepage.com/c461c07a441a5d220e8feb1a/773a5aa425b1502aaac14708/f2b45624-c8f6-3aa0-0ee4-58adda3c89b0.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    background-position: center;
     height: 100%;
   }
   
@@ -82,7 +82,7 @@
     background-image: url('https://images03.nicepage.com/c461c07a441a5d220e8feb1a/89993ff69c3e5244ad2bf1ba/blondestudentgirlissmilingholdingfoldernotebookherhandsuniversitybackground_101969664.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    background-position: center;
     height: 100%;
   }
   
@@ -94,6 +94,81 @@
     color: white;
     text-align: center;
   }
+  
+  button {
+    margin-top: var(--spacing);
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: var(--orange-color);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    body {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto auto auto;
+    }
+  
+    header {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+  
+    .school {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+    }
+  
+    .student {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+    }
+  
+    main {
+      grid-column: 1 / 2;
+      grid-row: 4 / 5;
+    }
+  
+    .time {
+      grid-column: 1 / 2;
+      grid-row: 5 / 6;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+    }
+  
+    .alumni {
+      grid-column: 1 / 2;
+      grid-row: 6 / 7;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+    }
+  
+    footer {
+      grid-column: 1 / 2;
+      grid-row: 7 / 8;
+    }
+
+  
   
   button {
     margin-top: var(--spacing);
